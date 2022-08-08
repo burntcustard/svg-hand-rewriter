@@ -1,42 +1,53 @@
-body {
-  font-family: sans-serif;
+:root {
+  --orange: #e45649;
+  --blue: #526fff;
+  --grey: #dbdbdc;
+  --grey-light: #eaeaeb;
 }
 
-/* Both code (highlighted & content-editable), and SVGs (1 & 2) are overlappy */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background: var(--grey-light);
+  accent-color: var(--blue);
+}
+
+pre,
+output {
+  display: grid;
+  border: 2px solid var(--grey);
+}
+
+/* Both code (highlighted & content-editable), and SVGs (1 & 2) are overlappy grids */
 code,
 output > * {
   grid-column: 1;
   grid-row: 1;
 }
 
-pre {
-  background: #eee;
-  display: grid;
-}
-
-code {
-  min-height: 4em;
-}
-
 code[contenteditable="true"] {
   background: transparent;
   color: transparent;
-  caret-color: #d88;
+  caret-color: var(--blue);
+}
+
+code:focus-visible {
+  outline: 2px solid var(--blue);
 }
 
 .controls {
+  margin-block: 8px;
+  padding-inline: 2px;
   display: grid;
   justify-content: start;
 }
 
 output {
-  border: 2px solid #333;
-  display: grid;
   resize: both;
   overflow: auto;
   width: 500px;
+  background: #fff;
 }
 
 output svg:nth-of-type(2) {
-  color: #d88;
+  color: #e45649;
 }
