@@ -32,6 +32,7 @@ function handleCodeEditable1Input() {
 handleCodeEditable1Input();
 
 codeEditable1.addEventListener('input', handleCodeEditable1Input);
+codeEditable1.addEventListener('scroll', () => codeHightlighted1.scrollLeft = codeEditable1.scrollLeft);
 
 function handleCodeEditable2Input() {
   codeHightlighted2.textContent = codeEditable2.innerText;
@@ -42,6 +43,7 @@ function handleCodeEditable2Input() {
 handleCodeEditable2Input();
 
 codeEditable2.addEventListener('input', handleCodeEditable2Input);
+codeEditable2.addEventListener('scroll', () => codeHightlighted2.scrollLeft = codeEditable2.scrollLeft);
 
 function setSvg2Opacity() {
   const svgElement2 = document.querySelector('output > *:last-child');
