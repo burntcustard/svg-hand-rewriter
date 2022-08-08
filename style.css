@@ -4,6 +4,7 @@
   --grey-40: #dbdbdc;
   --grey-50: #e5e5e6;
   --grey-60: #eaeaeb;
+  --black: #232324;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   background: var(--grey-60);
   accent-color: var(--blue);
   caret-color: var(--blue);
+  color: var(--black);
 }
 
 ::selection {
