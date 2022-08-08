@@ -21,7 +21,7 @@ code {
 code[contenteditable="true"] {
   background: transparent;
   color: transparent;
-  caret-color: red;
+  caret-color: #d88;
 }
 
 .controls {
@@ -35,4 +35,8 @@ output {
   resize: both;
   overflow: auto;
   width: 500px;
+}
+
+output svg:nth-of-type(2) {
+  color: #d88;
 }

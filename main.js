@@ -17,7 +17,7 @@ codeEditable1.textContent = `
 `.trim();
 
 codeEditable2.textContent = `
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" viewBox="0 0 17 16">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 17 16">
   <path d="M2 8 A8.4 12 0 0 0 15.33 8A8.4 12 0 0 0 2 8Z"/>
   <circle cx="8.67" cy="8" r="1.33"/>
 </svg>
@@ -43,10 +43,11 @@ handleCodeEditable2Input();
 
 codeEditable2.addEventListener('input', handleCodeEditable2Input);
 
-function setSecondSvgOpacity() {
-  document.querySelector('output > *:last-child').style.opacity = inputRangeElement.value / 100;
-};
+function setSvg2Opacity() {
+  const svgElement2 = document.querySelector('output > *:last-child');
+  svgElement2.style.opacity = inputRangeElement.value / 100;
+}
 
-setSecondSvgOpacity();
+setSvg2Opacity();
 
-inputRangeElement.addEventListener('input', setSecondSvgOpacity);
+inputRangeElement.addEventListener('input', setSvg2Opacity);
