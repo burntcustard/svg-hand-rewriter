@@ -24,7 +24,7 @@ codeEditable2.textContent = `
 `.trim();
 
 function handleCodeEditable1Input() {
-  codeHightlighted1.textContent = codeEditable1.textContent;
+  codeHightlighted1.textContent = codeEditable1.innerText;
   hljs.highlightElement(codeHightlighted1);
   svgContainer.innerHTML = codeEditable1.textContent + codeEditable2.textContent;
 }
@@ -34,7 +34,7 @@ handleCodeEditable1Input();
 codeEditable1.addEventListener('input', handleCodeEditable1Input);
 
 function handleCodeEditable2Input() {
-  codeHightlighted2.textContent = codeEditable2.textContent;
+  codeHightlighted2.textContent = codeEditable2.innerText;
   hljs.highlightElement(codeHightlighted2);
   svgContainer.innerHTML = codeEditable1.textContent + codeEditable2.textContent;
 }
