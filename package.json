@@ -1,0 +1,22 @@
+{
+  "name": "svg-hand-rewriter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "watch": "browser-sync --files index.html --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burntcustard/svg-hand-rewriter.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/burntcustard/svg-hand-rewriter/issues"
+  },
+  "homepage": "https://github.com/burntcustard/svg-hand-rewriter#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
