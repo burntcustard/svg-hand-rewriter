@@ -1,20 +1,26 @@
 :root {
   --orange: #e45649;
   --blue: #526fff;
-  --grey: #dbdbdc;
-  --grey-light: #eaeaeb;
+  --grey-40: #dbdbdc;
+  --grey-50: #e5e5e6;
+  --grey-60: #eaeaeb;
 }
 
 body {
   font-family: 'Fira Sans', sans-serif;
-  background: var(--grey-light);
+  background: var(--grey-60);
   accent-color: var(--blue);
+  caret-color: var(--blue);
+}
+
+::selection {
+  background: var(--grey-50);
 }
 
 pre,
 output {
   display: grid;
-  border: 2px solid var(--grey);
+  border: 2px solid var(--grey-40);
 }
 
 /* Both code (highlighted & content-editable), and SVGs (1 & 2) are overlappy grids */
@@ -24,10 +30,18 @@ output > * {
   grid-row: 1;
 }
 
+code,
+output {
+  min-height: 3.75rem;
+}
+
 code[contenteditable="true"] {
-  background: transparent;
   color: transparent;
-  caret-color: var(--blue);
+}
+
+code.hljs ~ code.hljs {
+  pointer-events: none;
+  background: transparent;
 }
 
 code:focus-visible {

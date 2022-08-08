@@ -4,8 +4,8 @@ hljs.registerLanguage('html', html);
 
 const codeEditable1 = document.querySelectorAll('pre code[contenteditable="true"]')[0];
 const codeEditable2 = document.querySelectorAll('pre code[contenteditable="true"]')[1];
-const codeHightlighted1 = document.querySelectorAll('pre code.language-html')[0];
-const codeHightlighted2 = document.querySelectorAll('pre code.language-html')[1];
+const codeHightlighted1 = document.querySelectorAll('pre code ~ code')[0];
+const codeHightlighted2 = document.querySelectorAll('pre code ~ code')[1];
 const svgContainer = document.querySelector('output');
 const inputRangeElement = document.querySelector('#opacity-range');
 
