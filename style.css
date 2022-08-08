@@ -1,10 +1,10 @@
 :root {
-  --orange: #e45649;
-  --blue: #526fff;
+  --black: #232324;
   --grey-40: #dbdbdc;
   --grey-50: #e5e5e6;
   --grey-60: #eaeaeb;
-  --black: #232324;
+  --orange: #e45649;
+  --blue: #526fff;
 }
 
 body {
@@ -65,5 +65,5 @@ output {
 }
 
 output svg:nth-of-type(2) {
-  color: #e45649;
+  color: var(--orange);
 }
