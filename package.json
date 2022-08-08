@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/burntcustard/svg-hand-rewriter.git"
   },
-  "author": "",
+  "author": "John Evans <burntcustard@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/burntcustard/svg-hand-rewriter/issues"
